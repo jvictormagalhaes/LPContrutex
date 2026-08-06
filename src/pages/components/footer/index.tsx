@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import logo from "../../image/logo.jpeg"
 import { Link } from "react-router-dom";
@@ -52,6 +52,7 @@ export function Footer() {
 
                         <ul className="space-y-3">
                             <li>Engenharia</li>
+                            <li>Assessoria em Engenharia</li>
                             <li>Energia Solar</li>
                             <li>Poços Artesianos</li>
                             <li>Locação de Equipamentos e Veículos</li>
@@ -80,7 +81,6 @@ export function Footer() {
                             </div>
 
                             <div className="flex items-center gap-3">
-                                <Mail size={20} className="text-red-500" />
                                 <span>rotex@construtexengenharia.com.br</span>
                             </div>
                         </div>
@@ -110,8 +110,8 @@ export function Footer() {
                 <div className="my-10 h-px bg-slate-800"></div>
 
                 <div className="flex flex-col items-center justify-between gap-4 text-sm text-slate-500 md:flex-row">
-                    <span>© {ano} Construtex Engenharia · CNPJ<strong className="ml-1 text-slate-300">31.276.477/0001-28</strong>. Todos os direitos reservados. </span>
-                    <span>Desenvolvido por Construtex</span>
+                    <span>© {ano} Construtex Engenharia · Todos os direitos reservados. </span>
+                    <span>Desenvolvido por <span className="text-red-800">Constru</span>tex</span>
                 </div>
             </div>
         </footer>

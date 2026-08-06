@@ -7,15 +7,52 @@ import fachada from "../image/fachada.jpg";
 import maquinas from "../image/maquinas.png";
 import iluminacao from "../image/iluminacao.png";
 import { FaWhatsapp } from "react-icons/fa";
+import { HardDriveDownload, Quote } from "lucide-react";
 
 export function Home() {
+
+    const depoimentos = [
+        {
+            id: 1,
+            titulo: "Qualidade Prometida.",
+            texto: "Um ótimo investimento para economia de energia, com a qualidade prometida.",
+            nome: "Carlos",
+            cargo: "Engenheiro, Pedreira Brisacet — Caucaia/CE",
+            segmento: "Energia Solar"
+        },
+        {
+            id: 2,
+            titulo: "Economia Expressiva.",
+            texto: "Depois da energia solar, tivemos uma economia expressiva. Parabéns à Construtex pelo compromisso e pela qualidade dos serviços prestados em nosso município.",
+            nome: "Sávio Gurgel",
+            cargo: "Prefeito, Prefeitura Municipal — Russas/CE",
+            segmento: "Energia Solar"
+        },
+        {
+            id: 3,
+            titulo: "Indico Muito.",
+            texto: "Uma empresa de confiança, completa e que, sempre que preciso, me oferece todo o apoio e suporte. Indico muito!",
+            nome: "Ana Vitória",
+            cargo: "Empresária, Mercantil Boa Vista — Hidrolândia/CE",
+            segmento: "Energia Solar"
+        },
+        {
+            id: 4,
+            titulo: "Confiança e Responsabilidade.",
+            texto: "Escolhi fazer meu poço com a Construtex porque vi que é uma empresa de confiança e responsabilidade.",
+            nome: "Mase Martins",
+            cargo: "Funcionária Pública — Hidrolândia/CE",
+            segmento: "Poços Profundos"
+        },
+    ];
+
     return (
         <div className="w-full">
             <section className="relative flex min-h-[135vh] items-center justify-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${capa})` }}>
                 {/* Conteúdo */}
                 <div className="relative z-10 mx-auto w-full max-w-screen-2xl px-6 pt-5">
                     <div className="mx-auto max-w-5xl text-center">
-                        <h1 className="text-5xl font-semibold tracking-tight text-white md:text-7xl">SLOGAM</h1>
+                        <h1 className="text-5xl font-semibold tracking-tight text-white md:text-7xl">Experiência, qualidade e soluções que transformam</h1>
                         <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-slate-200 md:text-xl"></p>
                     </div>
 
@@ -58,21 +95,21 @@ export function Home() {
                 </div>
                 <div className="justify-center flex mx-auto max-w-7xl px-6">
                     <div className="col-span-1 text-center">
-                        <h2 className="mt-10 text-3xl font-bold text-slate-800">Nossa Missão</h2>
+                        <h2 className="mt-10 text-3xl font-bold text-slate-800">Nossa missão</h2>
                         <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">
-                            Oferecer soluções integradas em construção civil, energia solar e perfuração de poços artesianos,
-                            executando serviços com qualidade, segurança, eficiência e responsabilidade, contribuindo para o
-                            desenvolvimento das cidades, das empresas e das comunidades atendidas.
+                            Oferecer soluções completas em engenharia, energia, infraestrutura e recursos hídricos, unindo
+                            experiência, tecnologia, qualidade e suporte técnico para transformar projetos em resultados e
+                            contribuir para o desenvolvimento dos nossos clientes.
                         </p>
 
-                        <h2 className="mt-10 text-3xl font-bold text-slate-800">Nossa Visão</h2>
+                        <h2 className="mt-10 text-3xl font-bold text-slate-800">Nossa visão</h2>
                         <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">
-                            Ser reconhecida como empresa de referência na prestação de serviços de construção civil, energia renovável
-                            e soluções de acesso à água, destacando-se pela excelência técnica, inovação, sustentabilidade, credibilidade
-                            e cumprimento dos compromissos assumidos.
+                            Ser reconhecida como uma empresa referência em soluções integradas de engenharia, energia solar e
+                            infraestrutura, destacando-se pela excelência dos serviços, inovação, confiança e compromisso
+                            com o cliente em todas as etapas.
                         </p>
 
-                        <h2 className="mt-10 text-3xl font-bold text-slate-800">Nossos Valores</h2>
+                        <h2 className="mt-10 text-3xl font-bold text-slate-800">Nossos valores</h2>
                         <div className="flex gap-3 text-center justify-center mt-5">
 
                             <button className="group relative inline-flex overflow-hidden rounded-2xl bg-linear-to-br from-red-500 via-red-600 to-black/70 p-0.5 shadow-lg transition-all duration-300">
@@ -90,12 +127,6 @@ export function Home() {
                             <button className="group relative inline-flex overflow-hidden rounded-2xl bg-linear-to-br from-red-500 via-red-600 to-black/70 p-0.5 shadow-lg transition-all duration-300">
                                 <span className="rounded-[14px] bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition-all duration-300 group-hover:bg-transparent group-hover:text-white">
                                     Segurança e Credibilidade
-                                </span>
-                            </button>
-
-                            <button className="group relative inline-flex overflow-hidden rounded-2xl bg-linear-to-br from-red-500 via-red-600 to-black/70 p-0.5 shadow-lg transition-all duration-300">
-                                <span className="rounded-[14px] bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition-all duration-300 group-hover:bg-transparent group-hover:text-white">
-                                    Compromisso com resultados
                                 </span>
                             </button>
 
@@ -263,7 +294,6 @@ export function Home() {
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -280,12 +310,49 @@ export function Home() {
                     </div>
 
                     <div className="my-5 flex flex-wrap justify-center gap-5">
-                        <button className="rounded-xl bg-red-600 px-8 py-4 text-lg font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-red-700 cursor-pointer">
-                            Portifólio
+                        <button className="flex gap-3 justify-between rounded-xl bg-red-600 px-8 py-4 text-lg font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-red-700 cursor-pointer">
+                            Portifólio <HardDriveDownload size={20} className="mt-0.5" />
                         </button>
                     </div>
                 </div>
             </section>
+
+            <section className="bg-slate-50 py-5">
+                <div className="flex flex-col gap-3 mx-auto max-w-7xl px-6">
+                    <div className="text-center">
+                        <span className="font-semibold uppercase tracking-widest text-red-600">Quem já usa, <span className="text-black">indica</span></span>
+                    </div>
+                    <div className="text-center">
+                        <h2 className="mt-1 text-4xl font-bold text-slate-800">O que nossos clientes <span className="text-red-500">dizem</span></h2>
+                    </div>
+
+                    <p className="mx-auto mt-4 max-w-2xl text-gray-600">
+                        A satisfação dos nossos clientes é o reflexo do nosso compromisso
+                        com qualidade, responsabilidade e excelência.
+                    </p>
+
+                    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+                        {depoimentos.map((item) => (
+                            <div key={item.id} className="group flex flex-col rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-red-500 hover:shadow-xl">
+                                <div className="flex justify-end mb-6 text-5xl text-red-600">
+                                    <Quote />
+                                </div>
+                                <h3 className="mb-3 text-xl font-semibold text-gray-900">{item.titulo}</h3>
+                                <p className="flex-1 leading-7 text-gray-600">{item.texto}</p>
+
+                                <div className="mt-4 flex items-center">
+                                    <div className="ml-4">
+                                        <h4 className="font-semibold text-gray-900">{item.nome}</h4>
+                                        <p className="text-sm text-gray-500">{item.cargo}</p>
+                                        <h3 className= "text-xs text-heading text-white text-center bg-red-600 rounded-2xl py-1 px-2 mt-1"> {item.segmento}</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section >
 
             <section className="bg-slate-50 py-5">
                 <div className="mx-auto max-w-7xl px-6 grid grid-cols-2 gap-3">
@@ -321,6 +388,7 @@ export function Home() {
                             <div className="flex flex-col gap-3 p-6">
                                 <h2 className="mt-3 text-2xl font-bold text-slate-800">Envie uma mensagem para nós.</h2>
                                 <input type="text" className="w-full px-2 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="Seu nome" />
+                                <input type="text" className="w-full px-2 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="Seu telefone" />
                                 <input type="text" className="w-full px-2 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="Seu e-mail" />
                                 <textarea className="w-full max-h-30 min-h-15 px-2 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition text-sm" placeholder="Mensagem" />
 
@@ -332,6 +400,6 @@ export function Home() {
                     </div>
                 </div>
             </section>
-        </div>
+        </div >
     );
 }
