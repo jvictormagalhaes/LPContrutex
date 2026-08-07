@@ -35,7 +35,7 @@ export function Footer() {
                                 <Link to="/#servicos" className="transition hover:text-red-700">Serviços</Link>
                             </li>
                             <li>
-                                <Link to="/#portifolios" className="transition hover:text-red-700">Portifólios</Link>
+                                <Link to="/#portifolios" className="transition hover:text-red-700">Portfólios</Link>
                             </li>
                             <li>
                                 <Link to="/#contatos" className="transition hover:text-red-700">Contatos</Link>

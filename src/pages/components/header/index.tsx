@@ -25,7 +25,7 @@ export function Header() {
                             </li>
 
                             <li>
-                                <Link to="/#portifolios" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-700 hover:text-white">Portifólios</Link>
+                                <Link to="/#portifolios" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-700 hover:text-white">Portfólios</Link>
                             </li>
 
                             <li>
