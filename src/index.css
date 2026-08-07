@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Chrome, Edge e Safari */
 ::-webkit-scrollbar {
   width: 10px;
@@ -23,4 +27,10 @@
 html {
   scrollbar-width: thin;
   scrollbar-color: #dc2626 #f8fafc;
+}
+
+/* Selection color */
+::selection {
+  background-color: #dc2626;
+  color: white;
 }

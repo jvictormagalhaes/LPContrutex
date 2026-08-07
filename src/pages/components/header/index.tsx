@@ -13,23 +13,23 @@ export function Header() {
                     <div className="hidden md:block">
                         <ul className="flex items-center gap-2 font-medium">
                             <li>
-                                <Link to="/" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-500 hover:text-white">Início</Link>
+                                <Link to="/#inicio" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-700 hover:text-white">Início</Link>
                             </li>
 
                             <li>
-                                <Link to="#" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-500 hover:text-white">Quem Somos</Link>
+                                <Link to="/#quem-somos" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-700 hover:text-white">Quem Somos</Link>
                             </li>
 
                             <li>
-                                <Link to="#" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-500 hover:text-white">Serviços</Link>
+                                <Link to="/#servicos" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-700 hover:text-white">Serviços</Link>
                             </li>
 
                             <li>
-                                <Link to="#" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-500 hover:text-white">Portifólio</Link>
+                                <Link to="/#portifolios" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-700 hover:text-white">Portifólios</Link>
                             </li>
 
                             <li>
-                                <Link to="#" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-500 hover:text-white">Contatos</Link>
+                                <Link to="/#contatos" className="rounded-lg px-4 py-2 text-slate-700 transition-all duration-300 hover:bg-red-700 hover:text-white">Contatos</Link>
                             </li>
 
                             <li className="ml-4">

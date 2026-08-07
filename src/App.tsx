@@ -15,3 +15,29 @@ const router = createBrowserRouter([
 ])
 
 export { router };
+
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToHashElement() {
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        if (hash) {
+            const elemento = document.querySelector(hash);
+
+            if (elemento) {
+                setTimeout(() => {
+                    elemento.scrollIntoView({
+                        behavior: "smooth",
+                    });
+                }, 100);
+            }
+        }
+    }, [hash]);
+
+    return null;
+}
+
+export default ScrollToHashElement;

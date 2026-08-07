@@ -26,19 +26,19 @@ export function Footer() {
                         <h3 className="mb-5 text-lg font-semibold text-white">Navegação</h3>
                         <ul className="space-y-3">
                             <li>
-                                <Link to="/" className="transition hover:text-red-500">Início</Link>
+                                <Link to="/#inicio" className="transition hover:text-red-700">Início</Link>
                             </li>
                             <li>
-                                <Link to="#" className="transition hover:text-red-500">Quem Somos</Link>
+                                <Link to="/#quem-somos" className="transition hover:text-red-700">Quem Somos</Link>
                             </li>
                             <li>
-                                <Link to="#" className="transition hover:text-red-500">Serviços</Link>
+                                <Link to="/#servicos" className="transition hover:text-red-700">Serviços</Link>
                             </li>
                             <li>
-                                <Link to="#" className="transition hover:text-red-500">Portifólio</Link>
+                                <Link to="/#portifolios" className="transition hover:text-red-700">Portifólios</Link>
                             </li>
                             <li>
-                                <Link to="#" className="transition hover:text-red-500">Contatos</Link>
+                                <Link to="/#contatos" className="transition hover:text-red-700">Contatos</Link>
                             </li>
                         </ul>
                     </div>
@@ -66,17 +66,17 @@ export function Footer() {
                         <h3 className="mb-5 text-lg font-semibold text-white">Contatos</h3>
                         <div className="space-y-3">
                             <div className="flex items-start gap-3">
-                                <MapPin size={40} className="mt-1 text-red-500" />
+                                <MapPin size={40} className="mt-1 text-red-700" />
                                 <span>Fortaleza/CE - BS Design, Av. Desembargador Moreira, 1300, Aldeota</span>
                             </div>
 
                             <div className="flex items-start gap-3">
-                                <MapPin size={40} className="mt-1 text-red-500" />
+                                <MapPin size={40} className="mt-1 text-red-700" />
                                 <span>Hidrolândia/CE - Av. Cláudio Camelo Timbó, 265 A, Nova Hidrolândia</span>
                             </div>
 
                             <div className="flex items-center gap-3">
-                                <Phone size={20} className="text-red-500" />
+                                <Phone size={20} className="text-red-700" />
                                 <span>(88) 98821-1858</span>
                             </div>
 
